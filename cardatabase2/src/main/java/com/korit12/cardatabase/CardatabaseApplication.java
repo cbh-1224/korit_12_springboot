@@ -26,7 +26,6 @@ public class CardatabaseApplication implements CommandLineRunner {
 		logger.info("애플리케이션이 실행됩니다.");
 	}
 
-	// field 선언
 	private final CarRepository carRepository;
 	private final OwnerRepository ownerRepository;
 

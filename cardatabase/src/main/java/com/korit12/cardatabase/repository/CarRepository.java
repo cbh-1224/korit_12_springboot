@@ -1,8 +1,8 @@
-package com.korit12.cardatabase.domain;
+package com.korit12.cardatabase.repository;
 
+import com.korit12.cardatabase.domain.Car;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
