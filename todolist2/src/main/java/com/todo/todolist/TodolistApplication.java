@@ -1,9 +1,9 @@
-package com.todolist.todolist;
+package com.todo.todolist;
 
-import com.todolist.todolist.entity.Todo;
-import com.todolist.todolist.entity.User;
-import com.todolist.todolist.repository.TodoRepository;
-import com.todolist.todolist.repository.UserRepository;
+import com.todo.todolist.entity.Todo;
+import com.todo.todolist.repository.TodoRepository;
+import com.todo.todolist.entity.User;
+import com.todo.todolist.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -14,10 +14,8 @@ import java.util.Arrays;
 @SpringBootApplication
 @AllArgsConstructor
 public class TodolistApplication implements CommandLineRunner {
-	private TodoRepository todoRepository;
 	private UserRepository userRepository;
-
-
+	private TodoRepository todoRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(TodolistApplication.class, args);
@@ -34,4 +32,3 @@ public class TodolistApplication implements CommandLineRunner {
 		todoRepository.saveAll(Arrays.asList(todo1, todo2));
 	}
 }
-

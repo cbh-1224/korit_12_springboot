@@ -1,6 +1,6 @@
-package com.todolist.todolist.repository;
+package com.todo.todolist.repository;
 
-import com.todolist.todolist.entity.User;
+import com.todo.todolist.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
